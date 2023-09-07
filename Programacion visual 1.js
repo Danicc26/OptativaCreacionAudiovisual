@@ -1,0 +1,8 @@
+osc(50,-0.0018,0.17).diff(osc(10,0.00008).rotate(Math.PI/0.00003))
+.modulateScale(noise(1.5,0.18).modulateScale(osc(5).rotate(()=>Math.sin(time/50))),1.1)
+.color(20,0.3,0.4, 0.5, 0.2, 0.01, 5, 22,  0.5, -1).contrast(1.9)
+.add(src(o0).modulate(o0,.04),.6, .9)
+.invert().brightness(0.0003, 2).contrast( 0.5, 1, 0.1, 1).color(2, -4, 0.3)
+.modulateScale(osc(2),-0.2, 2, 1, 0.3)
+ .color(20, -4, 0.2, 0.2, 0.0001,  0.1, 0.2, 6).contrast(0.1, 0.3, 0.1, 0.1, 0.03, 1) . brightness(0.0001, -1, 10)
+	.out()
